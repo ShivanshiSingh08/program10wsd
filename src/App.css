@@ -1,0 +1,133 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #e1ec6cb4; 
+  color: #fff; 
+}
+
+.app {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgb(188, 17, 165) 0%,
+    rgba(26, 19, 15, 2) 100%
+    
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  color: #efe2e2; 
+ 
+}
+
+h1:hover {
+  transform: scale(1.05, 1.05);
+
+}
+
+/* search input container */
+.search {
+  width: 71%;
+  margin: 4rem 0 2rem;
+  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  background: #aac5df; 
+  box-shadow: 5px 5px 7px #a0b7df, -5px -5px 7px #8ea5bd;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 1rem;
+  outline: none;
+  color: #fff; 
+  background: #e7eaec; 
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.search:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* the "No Results" message */
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #d29462; 
+  font-family: var(--font-raleway);
+}
+
+/*   movie container */
+.container {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*  individual movies */
+.movie {
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: black;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 2);
+  background-color: #7ba4cd; 
+}
+
+/* Styling for movie details overlay */
+.movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #f9d3b4; 
+}
+
+.movie:hover {
+  box-shadow: 0px 30px 18px -8px rgba(19, 17, 17, 2);
+  transform: scale(1.05, 1.05);
+}

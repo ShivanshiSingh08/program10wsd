@@ -1,0 +1,41 @@
+
+
+.movie {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 1);
+  }
+  
+  .movie img {
+    max-width: 100%;
+    object-fit: scale-down;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .movie p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10;
+    padding: 10;
+  }
+  
+  .movie span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fcf7f7;
+  }
+  
+  .movie h3 {
+    font-size: 18px;
+    margin: 10;
+    padding: 10;
+  }
+  .movie:hover{
+    box-shadow: 0px 0px 10px 0px rgb(20, 16, 16);
+  }
+  
